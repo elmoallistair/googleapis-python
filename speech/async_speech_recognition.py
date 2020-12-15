@@ -12,7 +12,7 @@ client = speech.SpeechClient()
 # audio = speech.RecognitionAudio(uri=source_audio)
 
 # Loads audio from local
-source_audio = "brooklyn-bridge.raw"
+source_audio = "res/brooklyn-bridge.raw"
 with io.open(source_audio, "rb") as audio_file:
         content = audio_file.read()
 audio = speech.RecognitionAudio(content=content)

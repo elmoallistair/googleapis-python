@@ -17,6 +17,7 @@ query = """
 """
 
 # Load data from Google BigQuery.
+print("Reading data from BigQuery...")
 df = pd.read_gbq(
     query=query, 
     project_id=project_id,
@@ -24,5 +25,5 @@ df = pd.read_gbq(
 )
 
 # Display the result
-print("Successfully read data from BigQuery !")
+print("\nResult:")
 print(df)

@@ -25,6 +25,6 @@ query_job = bigquery_client.query(query)
 results = query_job.result()
 
 # Displaying the query result
-print("Result")
+print("\nResult:")
 for row in results:
     print("{} : {} views".format(row.url, row.view_count))

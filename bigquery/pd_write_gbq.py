@@ -30,6 +30,7 @@ df = pd.DataFrame(
 )
 
 # Write a DataFrame to a Google BigQuery table
+print("Writing dataframe to {}...".format(table_id))
 pandas_gbq.to_gbq(
     dataframe=df, 
     destination_table=table_id, 
@@ -37,5 +38,4 @@ pandas_gbq.to_gbq(
     if_exists=method
 )
 
-# Display the result
-print("Successfully written data to {}".format(table_id))
+print("Done")

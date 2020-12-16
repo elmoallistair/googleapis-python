@@ -7,7 +7,7 @@ import os
 client = vision.ImageAnnotatorClient()
 
 # Loads the image from local
-source_image = "path/to/image"
+source_image = "images/shades.jpg"
 with io.open(source_image, "rb") as image_file:
     content = image_file.read()
 image = vision.Image(content=content)
@@ -15,7 +15,7 @@ image = vision.Image(content=content)
 # Perform properties detection
 print("Detecting colors from {}...\n".format(
     os.path.basename(source_image)))
-response = client.image_properties(image=image, max_results=5)
+response = client.image_properties(image=image, max_results=10)
 properties = response.image_properties_annotation
 
 # Display color information

@@ -7,7 +7,7 @@ import os
 client = vision.ImageAnnotatorClient()
 
 # Loads the image from local
-source_image = "path/to/image"
+source_image = "images/reog.jpg"
 with io.open(source_image, "rb") as image_file:
     content = image_file.read()
 image = vision.Image(content=content)

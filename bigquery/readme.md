@@ -1,10 +1,10 @@
 ## References
 
 * [BigQuery Documentation](https://cloud.google.com/bigquery/docs)
-* [Client Library Documentation](https://googleapis.dev/python/bigquery/latest/)
+* [Python Client for Google BigQuery](https://googleapis.dev/python/bigquery/latest/)
 
 
-## Install the client library
+## Installing client library
 
 ```
 $ pip install google-cloud-bigquery

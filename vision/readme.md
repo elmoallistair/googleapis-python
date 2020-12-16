@@ -1,10 +1,10 @@
 ## References
 
 * [Cloud Vision Documentation](https://cloud.google.com/vision/docs)
-* [Client Library Documentation](https://googleapis.dev/python/vision/latest/index.html)
+* [Python Client for Google Cloud Vision](https://googleapis.dev/python/vision/latest/index.html)
 
 
-## Install the client library
+## Installing client library
 
 ```
 pip install google-cloud-vision

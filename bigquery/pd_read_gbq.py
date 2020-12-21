@@ -2,13 +2,10 @@
 # Installation
 #   pip install pandas-gbq
 
-# Import library
 import pandas as pd
 
-# Set GCP Project ID
-project_id = "elmo-gcp"
+project_id = ""
 
-# Construct a SQL query
 query = """
     SELECT name
     FROM `bigquery-public-data.usa_names.usa_1910_current`
@@ -16,7 +13,6 @@ query = """
     LIMIT 100
 """
 
-# Load data from Google BigQuery.
 print("Reading data from BigQuery...")
 df = pd.read_gbq(
     query=query, 
@@ -24,6 +20,5 @@ df = pd.read_gbq(
     dialect='standard' 
 )
 
-# Display the result
 print("\nResult:")
 print(df)

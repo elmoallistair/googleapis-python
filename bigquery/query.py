@@ -1,10 +1,9 @@
-# Import librariey
+# Run a SQL Query
+
 from google.cloud import bigquery
 
-# Initialize a BigQuery client
 bigquery_client = bigquery.Client()
 
-# Construct a SQL query
 query = """
     SELECT
       CONCAT(
@@ -17,14 +16,10 @@ query = """
     LIMIT 10
 """
 
-# Run a SQL query
 print("Executing job...")
 query_job = bigquery_client.query(query)
 
-# Get the result
-results = query_job.result()
-
-# Displaying the query result
 print("\nResult:")
+results = query_job.result()
 for row in results:
     print("{} : {} views".format(row.url, row.view_count))

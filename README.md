@@ -19,6 +19,13 @@ pip install virtualenv
 virtualenv venv
 source venv/bin/activate
 ```
+## Enabling APIs
+
+```
+gcloud services enable [SERVICE NAME]
+```
+
+Or go to the [Cloud Console API Library](https://console.cloud.google.com/apis/library)
 
 ## Installing the client library
 
@@ -33,6 +40,6 @@ $ easy_install --upgrade google-api-python-client
 ```
 
 * Manual installation
-Download the latest [client library for Python](https://pypi.org/project/google-api-python-client/), unpack the code, and run python setup.py install 
 
+Download the latest [client library for Python](https://pypi.org/project/google-api-python-client/), unpack the code, and run python setup.py install 
 ```
